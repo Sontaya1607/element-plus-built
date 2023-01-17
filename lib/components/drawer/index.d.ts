@@ -166,8 +166,8 @@ export declare const ElDrawer: import("element-plus/es/utils").SFCWithInstall<im
 }, {
     readonly size: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
     readonly modelValue: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
-    readonly title: string;
     readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "ltr" | "rtl" | "ttb" | "btt", unknown>;
+    readonly title: string;
     readonly center: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
     readonly alignCenter: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
     readonly customClass: string;

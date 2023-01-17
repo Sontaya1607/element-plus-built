@@ -8238,7 +8238,7 @@ declare const _default: import("vue").DefineComponent<{
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
-        buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, boolean, boolean>;
+        buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
     }, {
         datesInYear: (year: number, lang: string) => Date[];
         props: Readonly<import("@vue/shared").LooseRequired<Readonly<import("vue").ExtractPropTypes<{
@@ -8260,7 +8260,7 @@ declare const _default: import("vue").DefineComponent<{
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
-            buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, boolean, boolean>;
+            buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
         }>> & {
             onPick?: ((...args: any[]) => any) | undefined;
         }>>;
@@ -8312,7 +8312,7 @@ declare const _default: import("vue").DefineComponent<{
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
-        buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, boolean, boolean>;
+        buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
     }>> & {
         onPick?: ((...args: any[]) => any) | undefined;
     }, {

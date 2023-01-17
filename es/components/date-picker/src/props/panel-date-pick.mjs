@@ -1,7 +1,8 @@
 import '../../../../utils/index.mjs';
-import { panelSharedProps } from './shared.mjs';
+import { buddhistEraSharedProps, panelSharedProps } from './shared.mjs';
 import { buildProps, definePropType } from '../../../../utils/vue/props/runtime.mjs';
 
+const { buddhistEra } = buddhistEraSharedProps;
 const panelDatePickProps = buildProps({
   ...panelSharedProps,
   parsedValue: {
@@ -14,10 +15,7 @@ const panelDatePickProps = buildProps({
     type: String,
     default: ""
   },
-  buddhistEra: {
-    type: Boolean,
-    default: false
-  }
+  buddhistEra
 });
 
 export { panelDatePickProps };

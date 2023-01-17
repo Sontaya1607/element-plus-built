@@ -1,10 +1,12 @@
 import '../../../../utils/index.mjs';
 import '../../../../hooks/index.mjs';
 import { CircleClose } from '@element-plus/icons-vue';
+import { buddhistEraSharedProps } from '../../../date-picker/src/props/shared.mjs';
 import { disabledTimeListsProps } from '../props/shared.mjs';
 import { buildProps, definePropType } from '../../../../utils/vue/props/runtime.mjs';
 import { useSizeProp } from '../../../../hooks/use-common-props/index.mjs';
 
+const { buddhistEra } = buddhistEraSharedProps;
 const timePickerDefaultProps = buildProps({
   id: {
     type: definePropType([Array, String])
@@ -104,10 +106,7 @@ const timePickerDefaultProps = buildProps({
     default: true
   },
   unlinkPanels: Boolean,
-  buddhistEra: {
-    type: Boolean,
-    default: false
-  }
+  buddhistEra
 });
 
 export { timePickerDefaultProps };

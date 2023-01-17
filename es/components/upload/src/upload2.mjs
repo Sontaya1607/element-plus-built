@@ -1,7 +1,7 @@
 import { defineComponent, useSlots, shallowRef, computed, onBeforeUnmount, provide, toRef, openBlock, createElementBlock, unref, createBlock, createSlots, withCtx, createVNode, mergeProps, renderSlot, createCommentVNode } from 'vue';
 import '../../../tokens/index.mjs';
 import '../../../hooks/index.mjs';
-import UploadList from './upload-list.mjs';
+import UploadList from './upload-list2.mjs';
 import UploadContent from './upload-content.mjs';
 import { useHandlers } from './use-handlers.mjs';
 import { uploadProps } from './upload.mjs';

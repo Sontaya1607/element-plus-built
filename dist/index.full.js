@@ -16392,6 +16392,59 @@
     return arr;
   };
 
+  const selectionModes = ["date", "dates", "year", "month", "week", "range"];
+  const datePickerSharedProps = buildProps({
+    disabledDate: {
+      type: definePropType(Function)
+    },
+    date: {
+      type: definePropType(Object),
+      required: true
+    },
+    minDate: {
+      type: definePropType(Object)
+    },
+    maxDate: {
+      type: definePropType(Object)
+    },
+    parsedValue: {
+      type: definePropType([Object, Array])
+    },
+    rangeState: {
+      type: definePropType(Object),
+      default: () => ({
+        endDate: null,
+        selecting: false
+      })
+    }
+  });
+  const panelSharedProps = buildProps({
+    type: {
+      type: definePropType(String),
+      required: true,
+      values: datePickTypes
+    }
+  });
+  const panelRangeSharedProps = buildProps({
+    unlinkPanels: Boolean,
+    parsedValue: {
+      type: definePropType(Array)
+    }
+  });
+  const selectionModeWithDefault = (mode) => {
+    return {
+      type: String,
+      values: selectionModes,
+      default: mode
+    };
+  };
+  const buddhistEraSharedProps = buildProps({
+    buddhistEra: {
+      type: Boolean,
+      default: false
+    }
+  });
+
   const disabledTimeListsProps = buildProps({
     disabledHours: {
       type: definePropType(Function)
@@ -16415,6 +16468,7 @@
     }
   });
 
+  const { buddhistEra: buddhistEra$7 } = buddhistEraSharedProps;
   const timePickerDefaultProps = buildProps({
     id: {
       type: definePropType([Array, String])
@@ -16514,10 +16568,7 @@
       default: true
     },
     unlinkPanels: Boolean,
-    buddhistEra: {
-      type: Boolean,
-      default: false
-    }
+    buddhistEra: buddhistEra$7
   });
 
   const _hoisted_1$Z = ["id", "name", "placeholder", "value", "disabled", "readonly"];
@@ -23741,7 +23792,7 @@
   })(isSameOrBefore$1);
   var isSameOrBefore = isSameOrBefore$1.exports;
 
-  var buddhistEra$1 = {exports: {}};
+  var buddhistEra$6 = {exports: {}};
 
   (function(module, exports) {
     !function(t, e) {
@@ -23758,67 +23809,19 @@
         };
       };
     });
-  })(buddhistEra$1);
-  var buddhistEra = buddhistEra$1.exports;
+  })(buddhistEra$6);
+  var buddhistEra$5 = buddhistEra$6.exports;
 
+  const { buddhistEra: buddhistEra$4 } = buddhistEraSharedProps;
   const datePickerProps = buildProps({
     type: {
       type: definePropType(String),
       default: "date"
     },
-    buddhistEra: {
-      type: Boolean,
-      default: false
-    }
+    buddhistEra: buddhistEra$4
   });
 
-  const selectionModes = ["date", "dates", "year", "month", "week", "range"];
-  const datePickerSharedProps = buildProps({
-    disabledDate: {
-      type: definePropType(Function)
-    },
-    date: {
-      type: definePropType(Object),
-      required: true
-    },
-    minDate: {
-      type: definePropType(Object)
-    },
-    maxDate: {
-      type: definePropType(Object)
-    },
-    parsedValue: {
-      type: definePropType([Object, Array])
-    },
-    rangeState: {
-      type: definePropType(Object),
-      default: () => ({
-        endDate: null,
-        selecting: false
-      })
-    }
-  });
-  const panelSharedProps = buildProps({
-    type: {
-      type: definePropType(String),
-      required: true,
-      values: datePickTypes
-    }
-  });
-  const panelRangeSharedProps = buildProps({
-    unlinkPanels: Boolean,
-    parsedValue: {
-      type: definePropType(Array)
-    }
-  });
-  const selectionModeWithDefault = (mode) => {
-    return {
-      type: String,
-      values: selectionModes,
-      default: mode
-    };
-  };
-
+  const { buddhistEra: buddhistEra$3 } = buddhistEraSharedProps;
   const panelDatePickProps = buildProps({
     ...panelSharedProps,
     parsedValue: {
@@ -23831,19 +23834,7 @@
       type: String,
       default: ""
     },
-    buddhistEra: {
-      type: Boolean,
-      default: false
-    }
-  });
-
-  const basicDateTableProps = buildProps({
-    ...datePickerSharedProps,
-    cellClassName: {
-      type: definePropType(Function)
-    },
-    showWeekNumber: Boolean,
-    selectionMode: selectionModeWithDefault("date")
+    buddhistEra: buddhistEra$3
   });
 
   const isValidRange = (range) => {
@@ -23916,6 +23907,27 @@
       setRowMetadata == null ? void 0 : setRowMetadata(row);
     }
   };
+  const getDayDiffValue = (buddhistEra) => {
+    return buddhistEra ? 543 : 0;
+  };
+  const getBuddhistEraFormat = (format) => {
+    return format.replace("YYYY", "BBBB");
+  };
+  const getBuddhistEraStringValue = (value, format) => {
+    const beYear = dayjs(value, format).year();
+    const ceYear = beYear - 543;
+    const dateStr = value.toString();
+    return dateStr.replace(beYear.toString(), ceYear.toString());
+  };
+
+  const basicDateTableProps = buildProps({
+    ...datePickerSharedProps,
+    cellClassName: {
+      type: definePropType(Function)
+    },
+    showWeekNumber: Boolean,
+    selectionMode: selectionModeWithDefault("date")
+  });
 
   const basicCellProps = buildProps({
     cell: {
@@ -24510,14 +24522,12 @@
   var MonthTable = /* @__PURE__ */ _export_sfc(_sfc_main$1m, [["__file", "basic-month-table.vue"]]);
 
   const { date, disabledDate, parsedValue } = datePickerSharedProps;
+  const { buddhistEra: buddhistEra$2 } = buddhistEraSharedProps;
   const basicYearTableProps = buildProps({
     date,
     disabledDate,
     parsedValue,
-    buddhistEra: {
-      type: Boolean,
-      default: false
-    }
+    buddhistEra: buddhistEra$2
   });
 
   const _hoisted_1$H = ["aria-label"];
@@ -24540,7 +24550,7 @@
       const { t, lang } = useLocale();
       const tbodyRef = vue.ref();
       const currentCellRef = vue.ref();
-      const yearOffset = props.buddhistEra ? 543 : 0;
+      const yearOffset = getDayDiffValue(props.buddhistEra);
       const startYear = vue.computed(() => {
         return Math.floor(props.date.year() / 10) * 10;
       });
@@ -24709,7 +24719,7 @@
       };
       const currentView = vue.ref("date");
       const yearLabel = vue.computed(() => {
-        const yearOffset = props.buddhistEra ? 543 : 0;
+        const yearOffset = getDayDiffValue(props.buddhistEra);
         const yearTranslation = t("el.datepicker.year");
         if (currentView.value === "year") {
           const startYear = Math.floor(year.value / 10) * 10 + yearOffset;
@@ -24877,28 +24887,15 @@
         return dayjs.isDayjs(date) && date.isValid() && (disabledDate ? !disabledDate(date.toDate()) : true);
       };
       const formatToString = (value) => {
-        if (props.buddhistEra) {
-          const formatted = props.format.replace("YYYY", "BBBB");
-          if (selectionMode.value === "dates") {
-            return value.map((_) => _.format(formatted));
-          }
-          return value.format(formatted);
-        } else {
-          if (selectionMode.value === "dates") {
-            return value.map((_) => _.format(props.format));
-          }
-          return value.format(props.format);
+        const template = props.buddhistEra ? getBuddhistEraFormat(props.format) : props.format;
+        if (selectionMode.value === "dates") {
+          return value.map((_) => _.format(template));
         }
+        return value.format(template);
       };
       const parseUserInput = (value) => {
-        if (props.buddhistEra) {
-          const bYear = dayjs(value).year();
-          const cYear = bYear - 543;
-          const dateString = value.toString();
-          const formatted = dateString.replace(bYear.toString(), cYear.toString());
-          return dayjs(formatted, props.format).locale(lang.value);
-        }
-        return dayjs(value, props.format).locale(lang.value);
+        const dateStringValue = props.buddhistEra ? getBuddhistEraStringValue(value, props.format) : value;
+        return dayjs(dateStringValue, props.format).locale(lang.value);
       };
       const getDefaultValue = () => {
         const parseDate = dayjs(defaultValue.value).locale(lang.value);
@@ -25263,13 +25260,11 @@
   });
   var DatePickPanel = /* @__PURE__ */ _export_sfc(_sfc_main$1k, [["__file", "panel-date-pick.vue"]]);
 
+  const { buddhistEra: buddhistEra$1 } = buddhistEraSharedProps;
   const panelDateRangeProps = buildProps({
     ...panelSharedProps,
     ...panelRangeSharedProps,
-    buddhistEra: {
-      type: Boolean,
-      default: false
-    }
+    buddhistEra: buddhistEra$1
   });
 
   const useShortcut = (lang) => {
@@ -25430,11 +25425,11 @@
         max: null
       });
       const leftLabel = vue.computed(() => {
-        const yearOffset = props.buddhistEra ? 543 : 0;
+        const yearOffset = getDayDiffValue(props.buddhistEra);
         return `${leftDate.value.year() + yearOffset} ${t("el.datepicker.year")} ${t(`el.datepicker.month${leftDate.value.month() + 1}`)}`;
       });
       const rightLabel = vue.computed(() => {
-        const yearOffset = props.buddhistEra ? 543 : 0;
+        const yearOffset = getDayDiffValue(props.buddhistEra);
         return `${rightDate.value.year() + yearOffset} ${t("el.datepicker.year")} ${t(`el.datepicker.month${rightDate.value.month() + 1}`)}`;
       });
       const leftYear = vue.computed(() => {
@@ -25675,9 +25670,13 @@
         emit("pick", null);
       };
       const formatToString = (value) => {
-        return isArray(value) ? value.map((_) => _.format(format)) : value.format(format);
+        const template = props.buddhistEra ? getBuddhistEraFormat(format) : format;
+        return isArray(value) ? value.map((_) => _.format(template)) : value.format(template);
       };
       const parseUserInput = (value) => {
+        if (props.buddhistEra) {
+          return isArray(value) ? value.map((_) => dayjs(getBuddhistEraStringValue(_, format), format).locale(lang.value)) : dayjs(getBuddhistEraStringValue(value, format), format).locale(lang.value);
+        }
         return isArray(value) ? value.map((_) => dayjs(_, format).locale(lang.value)) : dayjs(value, format).locale(lang.value);
       };
       function onParsedValueChanged(minDate2, maxDate2) {
@@ -26021,12 +26020,10 @@
   });
   var DateRangePickPanel = /* @__PURE__ */ _export_sfc(_sfc_main$1j, [["__file", "panel-date-range.vue"]]);
 
+  const { buddhistEra } = buddhistEraSharedProps;
   const panelMonthRangeProps = buildProps({
     ...panelRangeSharedProps,
-    buddhistEra: {
-      type: Boolean,
-      default: false
-    }
+    buddhistEra
   });
   const panelMonthRangeEmits = ["pick", "set-picker-option"];
 
@@ -26056,11 +26053,11 @@
       rightDate.value = rightDate.value.subtract(1, "year");
     };
     const leftLabel = vue.computed(() => {
-      const yearOffset = buddhistEra.value ? 543 : 0;
+      const yearOffset = getDayDiffValue(buddhistEra.value);
       return `${leftDate.value.year() + yearOffset} ${t("el.datepicker.year")}`;
     });
     const rightLabel = vue.computed(() => {
-      const yearOffset = buddhistEra.value ? 543 : 0;
+      const yearOffset = getDayDiffValue(buddhistEra.value);
       return `${rightDate.value.year() + yearOffset} ${t("el.datepicker.year")}`;
     });
     const leftYear = vue.computed(() => {
@@ -26319,7 +26316,7 @@
   dayjs.extend(dayOfYear);
   dayjs.extend(isSameOrAfter);
   dayjs.extend(isSameOrBefore);
-  dayjs.extend(buddhistEra);
+  dayjs.extend(buddhistEra$5);
   var DatePicker = vue.defineComponent({
     name: "ElDatePicker",
     install: null,

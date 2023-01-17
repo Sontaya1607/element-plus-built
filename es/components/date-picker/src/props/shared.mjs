@@ -53,6 +53,12 @@ const selectionModeWithDefault = (mode) => {
 const rangePickerSharedEmits = {
   pick: (range) => isArray(range)
 };
+const buddhistEraSharedProps = buildProps({
+  buddhistEra: {
+    type: Boolean,
+    default: false
+  }
+});
 
-export { datePickerSharedProps, panelRangeSharedProps, panelSharedProps, rangePickerSharedEmits, selectionModeWithDefault };
+export { buddhistEraSharedProps, datePickerSharedProps, panelRangeSharedProps, panelSharedProps, rangePickerSharedEmits, selectionModeWithDefault };
 //# sourceMappingURL=shared.mjs.map

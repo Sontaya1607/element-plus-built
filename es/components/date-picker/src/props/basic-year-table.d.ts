@@ -18,6 +18,6 @@ export declare const basicYearTableProps: {
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
     };
-    buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, boolean, boolean>;
+    buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
 };
 export declare type BasicYearTableProps = ExtractPropTypes<typeof basicYearTableProps>;

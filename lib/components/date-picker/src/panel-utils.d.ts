@@ -16984,7 +16984,7 @@ export declare const getPanel: (type: IDatePickerType) => import("vue").DefineCo
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
-        buddhistEra: import("../../../utils").EpPropFinalized<BooleanConstructor, unknown, unknown, boolean, boolean>;
+        buddhistEra: import("../../../utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
     }, {
         datesInYear: (year: number, lang: string) => Date[];
         props: Readonly<import("@vue/shared").LooseRequired<Readonly<import("vue").ExtractPropTypes<{
@@ -17006,7 +17006,7 @@ export declare const getPanel: (type: IDatePickerType) => import("vue").DefineCo
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
-            buddhistEra: import("../../../utils").EpPropFinalized<BooleanConstructor, unknown, unknown, boolean, boolean>;
+            buddhistEra: import("../../../utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
         }>> & {
             onPick?: ((...args: any[]) => any) | undefined;
         }>>;
@@ -17058,7 +17058,7 @@ export declare const getPanel: (type: IDatePickerType) => import("vue").DefineCo
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
-        buddhistEra: import("../../../utils").EpPropFinalized<BooleanConstructor, unknown, unknown, boolean, boolean>;
+        buddhistEra: import("../../../utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
     }>> & {
         onPick?: ((...args: any[]) => any) | undefined;
     }, {

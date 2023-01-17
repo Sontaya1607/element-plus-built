@@ -1,5 +1,6 @@
 import { computed } from 'vue';
 import '../../../../hooks/index.mjs';
+import { getDayDiffValue } from '../utils.mjs';
 import { useLocale } from '../../../../hooks/use-locale/index.mjs';
 
 const useMonthRangeHeader = ({
@@ -28,11 +29,11 @@ const useMonthRangeHeader = ({
     rightDate.value = rightDate.value.subtract(1, "year");
   };
   const leftLabel = computed(() => {
-    const yearOffset = buddhistEra.value ? 543 : 0;
+    const yearOffset = getDayDiffValue(buddhistEra.value);
     return `${leftDate.value.year() + yearOffset} ${t("el.datepicker.year")}`;
   });
   const rightLabel = computed(() => {
-    const yearOffset = buddhistEra.value ? 543 : 0;
+    const yearOffset = getDayDiffValue(buddhistEra.value);
     return `${rightDate.value.year() + yearOffset} ${t("el.datepicker.year")}`;
   });
   const leftYear = computed(() => {

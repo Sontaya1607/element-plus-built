@@ -5,7 +5,7 @@ import '../../../hooks/index.mjs';
 import '../../../tokens/index.mjs';
 import { useTooltipProps, tooltipEmits, useTooltipModelToggle } from './tooltip.mjs';
 import ElTooltipTrigger from './trigger2.mjs';
-import ElTooltipContent from './content2.mjs';
+import ElTooltipContent from './content.mjs';
 import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';
 import { usePopperContainer } from '../../../hooks/use-popper-container/index.mjs';
 import { useId } from '../../../hooks/use-id/index.mjs';

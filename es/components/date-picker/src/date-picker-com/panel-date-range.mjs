@@ -10,7 +10,7 @@ import { ElIcon } from '../../../icon/index.mjs';
 import { ArrowRight, DArrowLeft, ArrowLeft, DArrowRight } from '@element-plus/icons-vue';
 import { panelDateRangeProps } from '../props/panel-date-range.mjs';
 import { useRangePicker } from '../composables/use-range-picker.mjs';
-import { isValidRange, getDefaultValue } from '../utils.mjs';
+import { getDayDiffValue, isValidRange, getDefaultValue, getBuddhistEraFormat, getBuddhistEraStringValue } from '../utils.mjs';
 import DateTable from './basic-date-table.mjs';
 import _export_sfc from '../../../../_virtual/plugin-vue_export-helper.mjs';
 import { useLocale } from '../../../../hooks/use-locale/index.mjs';
@@ -77,11 +77,11 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       max: null
     });
     const leftLabel = computed(() => {
-      const yearOffset = props.buddhistEra ? 543 : 0;
+      const yearOffset = getDayDiffValue(props.buddhistEra);
       return `${leftDate.value.year() + yearOffset} ${t("el.datepicker.year")} ${t(`el.datepicker.month${leftDate.value.month() + 1}`)}`;
     });
     const rightLabel = computed(() => {
-      const yearOffset = props.buddhistEra ? 543 : 0;
+      const yearOffset = getDayDiffValue(props.buddhistEra);
       return `${rightDate.value.year() + yearOffset} ${t("el.datepicker.year")} ${t(`el.datepicker.month${rightDate.value.month() + 1}`)}`;
     });
     const leftYear = computed(() => {
@@ -322,9 +322,13 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       emit("pick", null);
     };
     const formatToString = (value) => {
-      return isArray(value) ? value.map((_) => _.format(format)) : value.format(format);
+      const template = props.buddhistEra ? getBuddhistEraFormat(format) : format;
+      return isArray(value) ? value.map((_) => _.format(template)) : value.format(template);
     };
     const parseUserInput = (value) => {
+      if (props.buddhistEra) {
+        return isArray(value) ? value.map((_) => dayjs(getBuddhistEraStringValue(_, format), format).locale(lang.value)) : dayjs(getBuddhistEraStringValue(value, format), format).locale(lang.value);
+      }
       return isArray(value) ? value.map((_) => dayjs(_, format).locale(lang.value)) : dayjs(value, format).locale(lang.value);
     };
     function onParsedValueChanged(minDate2, maxDate2) {

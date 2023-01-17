@@ -28,4 +28,7 @@ declare type BuildPickerTableMetadata = {
     setRowMetadata?: (row: DateCell[]) => void;
 };
 export declare const buildPickerTable: (dimension: Dimension, rows: DateCell[][], { columnIndexOffset, startDate, nextEndDate, now, unit, relativeDateGetter, setCellMetadata, setRowMetadata, }: BuildPickerTableMetadata) => void;
+export declare const getDayDiffValue: (buddhistEra: boolean) => number;
+export declare const getBuddhistEraFormat: (format: string) => string;
+export declare const getBuddhistEraStringValue: (value: Dayjs, format: string) => string;
 export {};

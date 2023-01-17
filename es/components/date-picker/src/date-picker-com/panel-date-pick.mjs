@@ -11,6 +11,7 @@ import '../../../../constants/index.mjs';
 import { DArrowLeft, ArrowLeft, ArrowRight, DArrowRight } from '@element-plus/icons-vue';
 import '../../../../tokens/index.mjs';
 import { panelDatePickProps } from '../props/panel-date-pick.mjs';
+import { getDayDiffValue, getBuddhistEraFormat, getBuddhistEraStringValue } from '../utils.mjs';
 import DateTable from './basic-date-table.mjs';
 import MonthTable from './basic-month-table.mjs';
 import YearTable from './basic-year-table.mjs';
@@ -112,7 +113,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
     const currentView = ref("date");
     const yearLabel = computed(() => {
-      const yearOffset = props.buddhistEra ? 543 : 0;
+      const yearOffset = getDayDiffValue(props.buddhistEra);
       const yearTranslation = t("el.datepicker.year");
       if (currentView.value === "year") {
         const startYear = Math.floor(year.value / 10) * 10 + yearOffset;
@@ -280,28 +281,15 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       return dayjs.isDayjs(date) && date.isValid() && (disabledDate ? !disabledDate(date.toDate()) : true);
     };
     const formatToString = (value) => {
-      if (props.buddhistEra) {
-        const formatted = props.format.replace("YYYY", "BBBB");
-        if (selectionMode.value === "dates") {
-          return value.map((_) => _.format(formatted));
-        }
-        return value.format(formatted);
-      } else {
-        if (selectionMode.value === "dates") {
-          return value.map((_) => _.format(props.format));
-        }
-        return value.format(props.format);
+      const template = props.buddhistEra ? getBuddhistEraFormat(props.format) : props.format;
+      if (selectionMode.value === "dates") {
+        return value.map((_) => _.format(template));
       }
+      return value.format(template);
     };
     const parseUserInput = (value) => {
-      if (props.buddhistEra) {
-        const bYear = dayjs(value).year();
-        const cYear = bYear - 543;
-        const dateString = value.toString();
-        const formatted = dateString.replace(bYear.toString(), cYear.toString());
-        return dayjs(formatted, props.format).locale(lang.value);
-      }
-      return dayjs(value, props.format).locale(lang.value);
+      const dateStringValue = props.buddhistEra ? getBuddhistEraStringValue(value, props.format) : value;
+      return dayjs(dateStringValue, props.format).locale(lang.value);
     };
     const getDefaultValue = () => {
       const parseDate = dayjs(defaultValue.value).locale(lang.value);

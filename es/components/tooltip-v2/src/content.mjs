@@ -10,7 +10,7 @@ import { tooltipV2RootKey, tooltipV2ContentKey } from '../../../tokens/tooltip-v
 import { useFloating, arrowMiddleware } from '../../../hooks/use-floating/index.mjs';
 import { useZIndex } from '../../../hooks/use-z-index/index.mjs';
 import { useNamespace } from '../../../hooks/use-namespace/index.mjs';
-import ElVisuallyHidden from '../../visual-hidden/src/visual-hidden.mjs';
+import ElVisuallyHidden from '../../visual-hidden/src/visual-hidden2.mjs';
 
 const _hoisted_1 = ["data-side"];
 const __default__ = defineComponent({

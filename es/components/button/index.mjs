@@ -1,7 +1,7 @@
 import '../../utils/index.mjs';
-import Button from './src/button2.mjs';
+import Button from './src/button.mjs';
 import ButtonGroup from './src/button-group.mjs';
-export { buttonEmits, buttonNativeTypes, buttonProps, buttonTypes } from './src/button.mjs';
+export { buttonEmits, buttonNativeTypes, buttonProps, buttonTypes } from './src/button2.mjs';
 import { withInstall, withNoopInstall } from '../../utils/vue/install.mjs';
 
 const ElButton = withInstall(Button, {

@@ -1,7 +1,7 @@
 import { defineComponent, shallowRef, openBlock, createElementBlock, normalizeClass, unref, withKeys, withModifiers, createBlock, withCtx, renderSlot, createElementVNode } from 'vue';
 import '../../../hooks/index.mjs';
 import '../../../utils/index.mjs';
-import UploadDragger from './upload-dragger.mjs';
+import UploadDragger from './upload-dragger2.mjs';
 import { uploadContentProps } from './upload-content2.mjs';
 import { genFileId } from './upload.mjs';
 import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';

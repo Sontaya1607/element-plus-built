@@ -4,6 +4,7 @@ import '../../../../hooks/index.mjs';
 import '../../../time-picker/index.mjs';
 import '../../../../utils/index.mjs';
 import { basicYearTableProps } from '../props/basic-year-table.mjs';
+import { getDayDiffValue } from '../utils.mjs';
 import _export_sfc from '../../../../_virtual/plugin-vue_export-helper.mjs';
 import { rangeArr } from '../../../time-picker/src/utils.mjs';
 import { useNamespace } from '../../../../hooks/use-namespace/index.mjs';
@@ -31,7 +32,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const { t, lang } = useLocale();
     const tbodyRef = ref();
     const currentCellRef = ref();
-    const yearOffset = props.buddhistEra ? 543 : 0;
+    const yearOffset = getDayDiffValue(props.buddhistEra);
     const startYear = computed(() => {
       return Math.floor(props.date.year() / 10) * 10;
     });

@@ -72,6 +72,18 @@ const buildPickerTable = (dimension, rows, {
     setRowMetadata == null ? void 0 : setRowMetadata(row);
   }
 };
+const getDayDiffValue = (buddhistEra) => {
+  return buddhistEra ? 543 : 0;
+};
+const getBuddhistEraFormat = (format) => {
+  return format.replace("YYYY", "BBBB");
+};
+const getBuddhistEraStringValue = (value, format) => {
+  const beYear = dayjs(value, format).year();
+  const ceYear = beYear - 543;
+  const dateStr = value.toString();
+  return dateStr.replace(beYear.toString(), ceYear.toString());
+};
 
-export { buildPickerTable, getDefaultValue, isValidRange };
+export { buildPickerTable, getBuddhistEraFormat, getBuddhistEraStringValue, getDayDiffValue, getDefaultValue, isValidRange };
 //# sourceMappingURL=utils.mjs.map

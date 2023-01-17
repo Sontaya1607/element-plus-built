@@ -68,4 +68,7 @@ export declare const rangePickerSharedEmits: {
 };
 export declare type RangePickerSharedEmits = typeof rangePickerSharedEmits;
 export declare type PanelRangeSharedProps = ExtractPropTypes<typeof panelRangeSharedProps>;
+export declare const buddhistEraSharedProps: {
+    readonly buddhistEra: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
+};
 export {};
