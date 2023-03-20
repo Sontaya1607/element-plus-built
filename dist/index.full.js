@@ -23913,11 +23913,16 @@
   const getBuddhistEraFormat = (format) => {
     return format.replace("YYYY", "BBBB");
   };
-  const getBuddhistEraStringValue = (value, format) => {
-    const beYear = dayjs(value, format).year();
-    const ceYear = beYear - 543;
-    const dateStr = value.toString();
-    return dateStr.replace(beYear.toString(), ceYear.toString());
+  const parseBuddhistEraToChristEra = (format) => {
+    return format.replace("BBBB", "YYYY");
+  };
+  const parseBuddhistEraUserInputToDayjs = (value, format) => {
+    if (format.includes("BBBB")) {
+      const beYear = value.toString().slice(Math.max(0, 7));
+      const ceYear = (Number.parseInt(beYear) - 543).toString();
+      return value.toString().replace(beYear, ceYear);
+    }
+    return value.toString();
   };
 
   const basicDateTableProps = buildProps({
@@ -24894,8 +24899,9 @@
         return value.format(template);
       };
       const parseUserInput = (value) => {
-        const dateStringValue = props.buddhistEra ? getBuddhistEraStringValue(value, props.format) : value;
-        return dayjs(dateStringValue, props.format).locale(lang.value);
+        const dateStrVal = props.buddhistEra ? parseBuddhistEraUserInputToDayjs(value, props.format) : value;
+        const formatStr = props.buddhistEra ? parseBuddhistEraToChristEra(props.format) : props.format;
+        return dayjs(dateStrVal, formatStr).locale(lang.value);
       };
       const getDefaultValue = () => {
         const parseDate = dayjs(defaultValue.value).locale(lang.value);
@@ -25675,7 +25681,8 @@
       };
       const parseUserInput = (value) => {
         if (props.buddhistEra) {
-          return isArray(value) ? value.map((_) => dayjs(getBuddhistEraStringValue(_, format), format).locale(lang.value)) : dayjs(getBuddhistEraStringValue(value, format), format).locale(lang.value);
+          const formatStr = parseBuddhistEraToChristEra(format);
+          return isArray(value) ? value.map((_) => dayjs(parseBuddhistEraUserInputToDayjs(_, format), formatStr).locale(lang.value)) : dayjs(parseBuddhistEraUserInputToDayjs(value, format), formatStr).locale(lang.value);
         }
         return isArray(value) ? value.map((_) => dayjs(_, format).locale(lang.value)) : dayjs(value, format).locale(lang.value);
       };

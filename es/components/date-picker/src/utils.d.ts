@@ -30,5 +30,6 @@ declare type BuildPickerTableMetadata = {
 export declare const buildPickerTable: (dimension: Dimension, rows: DateCell[][], { columnIndexOffset, startDate, nextEndDate, now, unit, relativeDateGetter, setCellMetadata, setRowMetadata, }: BuildPickerTableMetadata) => void;
 export declare const getDayDiffValue: (buddhistEra: boolean) => number;
 export declare const getBuddhistEraFormat: (format: string) => string;
-export declare const getBuddhistEraStringValue: (value: Dayjs, format: string) => string;
+export declare const parseBuddhistEraToChristEra: (format: string) => string;
+export declare const parseBuddhistEraUserInputToDayjs: (value: Dayjs, format: string) => string;
 export {};

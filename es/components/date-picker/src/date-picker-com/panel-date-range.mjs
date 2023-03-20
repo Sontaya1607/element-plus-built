@@ -10,7 +10,7 @@ import { ElIcon } from '../../../icon/index.mjs';
 import { ArrowRight, DArrowLeft, ArrowLeft, DArrowRight } from '@element-plus/icons-vue';
 import { panelDateRangeProps } from '../props/panel-date-range.mjs';
 import { useRangePicker } from '../composables/use-range-picker.mjs';
-import { getDayDiffValue, isValidRange, getDefaultValue, getBuddhistEraFormat, getBuddhistEraStringValue } from '../utils.mjs';
+import { getDayDiffValue, isValidRange, getDefaultValue, getBuddhistEraFormat, parseBuddhistEraToChristEra, parseBuddhistEraUserInputToDayjs } from '../utils.mjs';
 import DateTable from './basic-date-table.mjs';
 import _export_sfc from '../../../../_virtual/plugin-vue_export-helper.mjs';
 import { useLocale } from '../../../../hooks/use-locale/index.mjs';
@@ -327,7 +327,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
     const parseUserInput = (value) => {
       if (props.buddhistEra) {
-        return isArray(value) ? value.map((_) => dayjs(getBuddhistEraStringValue(_, format), format).locale(lang.value)) : dayjs(getBuddhistEraStringValue(value, format), format).locale(lang.value);
+        const formatStr = parseBuddhistEraToChristEra(format);
+        return isArray(value) ? value.map((_) => dayjs(parseBuddhistEraUserInputToDayjs(_, format), formatStr).locale(lang.value)) : dayjs(parseBuddhistEraUserInputToDayjs(value, format), formatStr).locale(lang.value);
       }
       return isArray(value) ? value.map((_) => dayjs(_, format).locale(lang.value)) : dayjs(value, format).locale(lang.value);
     };

@@ -96,10 +96,10 @@ declare const _default: import("vue").DefineComponent<{
     readonly title: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
     readonly extra: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
 }>>, {
-    readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "vertical" | "horizontal", unknown>;
-    readonly border: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
     readonly title: string;
     readonly column: number;
+    readonly border: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
+    readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "vertical" | "horizontal", unknown>;
     readonly extra: string;
 }>;
 export default _default;

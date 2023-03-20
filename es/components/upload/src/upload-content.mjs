@@ -3,7 +3,7 @@ import '../../../hooks/index.mjs';
 import '../../../utils/index.mjs';
 import UploadDragger from './upload-dragger2.mjs';
 import { uploadContentProps } from './upload-content2.mjs';
-import { genFileId } from './upload.mjs';
+import { genFileId } from './upload2.mjs';
 import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';
 import { useNamespace } from '../../../hooks/use-namespace/index.mjs';
 import { useDisabled } from '../../../hooks/use-common-props/index.mjs';

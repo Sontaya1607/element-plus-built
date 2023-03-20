@@ -36,7 +36,7 @@ declare const _default: import("vue").DefineComponent<{
     columnKey: StringConstructor;
     align: StringConstructor;
     headerAlign: StringConstructor;
-    showOverflowTooltip: import("vue").PropType<boolean | Partial<Pick<import("../../..").ElTooltipProps, "placement" | "showAfter" | "hideAfter" | "offset" | "effect" | "popperClass" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
+    showOverflowTooltip: import("vue").PropType<boolean | Partial<Pick<import("../../..").ElTooltipProps, "placement" | "offset" | "effect" | "popperClass" | "showAfter" | "hideAfter" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
     fixed: (BooleanConstructor | StringConstructor)[];
     formatter: import("vue").PropType<(row: any, column: TableColumnCtx<any>, cellValue: any, index: number) => string | import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
         [key: string]: any;
@@ -94,7 +94,7 @@ declare const _default: import("vue").DefineComponent<{
     columnKey: StringConstructor;
     align: StringConstructor;
     headerAlign: StringConstructor;
-    showOverflowTooltip: import("vue").PropType<boolean | Partial<Pick<import("../../..").ElTooltipProps, "placement" | "showAfter" | "hideAfter" | "offset" | "effect" | "popperClass" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
+    showOverflowTooltip: import("vue").PropType<boolean | Partial<Pick<import("../../..").ElTooltipProps, "placement" | "offset" | "effect" | "popperClass" | "showAfter" | "hideAfter" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
     fixed: (BooleanConstructor | StringConstructor)[];
     formatter: import("vue").PropType<(row: any, column: TableColumnCtx<any>, cellValue: any, index: number) => string | import("vue").VNode<import("vue").RendererNode, import("vue").RendererElement, {
         [key: string]: any;

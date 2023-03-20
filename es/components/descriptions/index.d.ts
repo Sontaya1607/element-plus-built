@@ -96,10 +96,10 @@ export declare const ElDescriptions: import("element-plus/es/utils").SFCWithInst
     readonly title: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
     readonly extra: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
 }>>, {
-    readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "vertical" | "horizontal", unknown>;
-    readonly border: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
     readonly title: string;
     readonly column: number;
+    readonly border: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
+    readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "vertical" | "horizontal", unknown>;
     readonly extra: string;
 }>> & {
     DescriptionsItem: import("vue").DefineComponent<{
@@ -171,9 +171,9 @@ export declare const ElDescriptions: import("element-plus/es/utils").SFCWithInst
     }>>, {
         label: string;
         width: string | number;
+        className: string;
         minWidth: string | number;
         span: number;
-        className: string;
         align: string;
         labelAlign: string;
         labelClassName: string;
@@ -248,9 +248,9 @@ export declare const ElDescriptionsItem: import("element-plus/es/utils").SFCWith
 }>>, {
     label: string;
     width: string | number;
+    className: string;
     minWidth: string | number;
     span: number;
-    className: string;
     align: string;
     labelAlign: string;
     labelClassName: string;

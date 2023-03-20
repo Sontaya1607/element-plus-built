@@ -76,7 +76,7 @@ declare const _default: import("vue").DefineComponent<{
         startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
         endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
         format: (template?: string | undefined) => string;
-        diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+        diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
         valueOf: () => number;
         unix: () => number;
         daysInMonth: () => number;
@@ -147,7 +147,7 @@ declare const _default: import("vue").DefineComponent<{
         startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
         endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
         format: (template?: string | undefined) => string;
-        diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+        diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
         valueOf: () => number;
         unix: () => number;
         daysInMonth: () => number;
@@ -221,7 +221,7 @@ declare const _default: import("vue").DefineComponent<{
             startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
             endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
             format: (template?: string | undefined) => string;
-            diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+            diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
             valueOf: () => number;
             unix: () => number;
             daysInMonth: () => number;
@@ -480,7 +480,7 @@ declare const _default: import("vue").DefineComponent<{
             start: boolean;
             end: boolean;
             text: number;
-            type: "today" | "normal";
+            type: "normal" | "today";
             inRange: boolean;
         }[][]>;
         lastRow: import("vue").Ref<number | undefined>;
@@ -492,7 +492,7 @@ declare const _default: import("vue").DefineComponent<{
             start: boolean;
             end: boolean;
             text: number;
-            type: "today" | "normal";
+            type: "normal" | "today";
             inRange: boolean;
         }[][]>;
         focus: () => void;
@@ -503,7 +503,7 @@ declare const _default: import("vue").DefineComponent<{
             start: boolean;
             end: boolean;
             text: number;
-            type: "today" | "normal";
+            type: "normal" | "today";
             inRange: boolean;
         }) => any;
         isSelectedCell: (cell: {
@@ -513,7 +513,7 @@ declare const _default: import("vue").DefineComponent<{
             start: boolean;
             end: boolean;
             text: number;
-            type: "today" | "normal";
+            type: "normal" | "today";
             inRange: boolean;
         }) => boolean;
         handleMouseMove: (event: MouseEvent) => void;

@@ -2,7 +2,7 @@ import '../../utils/index.mjs';
 import TooltipV2 from './src/tooltip2.mjs';
 export { tooltipV2ArrowProps, tooltipV2ArrowSpecialProps } from './src/arrow.mjs';
 export { tooltipV2ContentProps } from './src/content2.mjs';
-export { tooltipV2RootProps } from './src/root2.mjs';
+export { tooltipV2RootProps } from './src/root.mjs';
 export { tooltipV2Props } from './src/tooltip.mjs';
 export { tooltipV2TriggerProps } from './src/trigger2.mjs';
 import { withInstall } from '../../utils/vue/install.mjs';

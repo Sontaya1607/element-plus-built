@@ -296,10 +296,10 @@ export declare const ElTreeV2: import("element-plus/es/utils").SFCWithInstall<im
         onScroll?: ((...args: any[]) => any) | undefined;
         onItemRendered?: ((...args: any[]) => any) | undefined;
     }, {
-        readonly data: any[];
-        readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "ltr" | "rtl", never>;
         readonly className: string;
         readonly layout: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "vertical" | "horizontal", never>;
+        readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "ltr" | "rtl", never>;
+        readonly data: any[];
         readonly scrollbarAlwaysOn: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
         readonly containerElement: import("element-plus/es/utils").EpPropMergeType<(new (...args: any[]) => (string | Element) & {}) | (() => string | Element) | ((new (...args: any[]) => (string | Element) & {}) | (() => string | Element))[], unknown, unknown>;
         readonly innerElement: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ObjectConstructor], unknown, unknown>;
@@ -340,7 +340,7 @@ export declare const ElTreeV2: import("element-plus/es/utils").SFCWithInstall<im
             onToggle?: ((node: import("./src/types").TreeNode) => any) | undefined;
             onCheck?: ((node: import("./src/types").TreeNode, checked: import("..").CheckboxValueType) => any) | undefined;
         }>>;
-        emit: ((event: "click", node: import("./src/types").TreeNode, e: MouseEvent) => void) & ((event: "toggle", node: import("./src/types").TreeNode) => void) & ((event: "check", node: import("./src/types").TreeNode, checked: import("..").CheckboxValueType) => void);
+        emit: ((event: "click", node: import("./src/types").TreeNode, e: MouseEvent) => void) & ((event: "check", node: import("./src/types").TreeNode, checked: import("..").CheckboxValueType) => void) & ((event: "toggle", node: import("./src/types").TreeNode) => void);
         tree: import("./src/types").TreeContext | undefined;
         ns: {
             namespace: import("vue").Ref<string>;
@@ -517,8 +517,8 @@ export declare const ElTreeV2: import("element-plus/es/utils").SFCWithInstall<im
                     default: boolean;
                 };
             }>> & {
-                "onUpdate:modelValue"?: ((val: import("..").CheckboxValueType) => any) | undefined;
                 onChange?: ((val: import("..").CheckboxValueType) => any) | undefined;
+                "onUpdate:modelValue"?: ((val: import("..").CheckboxValueType) => any) | undefined;
             }>>;
             slots: Readonly<{
                 [name: string]: import("vue").Slot | undefined;
@@ -600,8 +600,8 @@ export declare const ElTreeV2: import("element-plus/es/utils").SFCWithInstall<im
                 default: boolean;
             };
         }>> & {
-            "onUpdate:modelValue"?: ((val: import("..").CheckboxValueType) => any) | undefined;
             onChange?: ((val: import("..").CheckboxValueType) => any) | undefined;
+            "onUpdate:modelValue"?: ((val: import("..").CheckboxValueType) => any) | undefined;
         }, {
             disabled: boolean;
             name: string;
@@ -703,8 +703,8 @@ export declare const ElTreeV2: import("element-plus/es/utils").SFCWithInstall<im
                         default: boolean;
                     };
                 }>> & {
-                    "onUpdate:modelValue"?: ((val: import("..").CheckboxValueType) => any) | undefined;
                     onChange?: ((val: import("..").CheckboxValueType) => any) | undefined;
+                    "onUpdate:modelValue"?: ((val: import("..").CheckboxValueType) => any) | undefined;
                 }>>;
                 slots: Readonly<{
                     [name: string]: import("vue").Slot | undefined;
@@ -786,8 +786,8 @@ export declare const ElTreeV2: import("element-plus/es/utils").SFCWithInstall<im
                     default: boolean;
                 };
             }>> & {
-                "onUpdate:modelValue"?: ((val: import("..").CheckboxValueType) => any) | undefined;
                 onChange?: ((val: import("..").CheckboxValueType) => any) | undefined;
+                "onUpdate:modelValue"?: ((val: import("..").CheckboxValueType) => any) | undefined;
             }, {
                 disabled: boolean;
                 name: string;
@@ -835,8 +835,8 @@ export declare const ElTreeV2: import("element-plus/es/utils").SFCWithInstall<im
                     readonly tag: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, "div", boolean>;
                     readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
                 }>> & {
-                    "onUpdate:modelValue"?: ((val: import("..").CheckboxGroupValueType) => any) | undefined;
                     onChange?: ((val: import("..").CheckboxValueType[]) => any) | undefined;
+                    "onUpdate:modelValue"?: ((val: import("..").CheckboxGroupValueType) => any) | undefined;
                 }>>;
                 emit: ((event: "update:modelValue", val: import("..").CheckboxGroupValueType) => void) & ((event: "change", val: import("..").CheckboxValueType[]) => void);
                 ns: {
@@ -882,8 +882,8 @@ export declare const ElTreeV2: import("element-plus/es/utils").SFCWithInstall<im
                 readonly tag: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, "div", boolean>;
                 readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
             }>> & {
-                "onUpdate:modelValue"?: ((val: import("..").CheckboxGroupValueType) => any) | undefined;
                 onChange?: ((val: import("..").CheckboxValueType[]) => any) | undefined;
+                "onUpdate:modelValue"?: ((val: import("..").CheckboxGroupValueType) => any) | undefined;
             }, {
                 readonly disabled: boolean;
                 readonly modelValue: import("..").CheckboxGroupValueType;

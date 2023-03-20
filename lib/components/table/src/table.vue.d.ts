@@ -38,7 +38,7 @@ declare const _default: import("vue").DefineComponent<{
     defaultExpandAll: BooleanConstructor;
     defaultSort: import("vue").PropType<import("./table/defaults").Sort | undefined>;
     tooltipEffect: StringConstructor;
-    tooltipOptions: import("vue").PropType<Partial<Pick<import("../..").ElTooltipProps, "placement" | "showAfter" | "hideAfter" | "offset" | "effect" | "popperClass" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
+    tooltipOptions: import("vue").PropType<Partial<Pick<import("../..").ElTooltipProps, "placement" | "offset" | "effect" | "popperClass" | "showAfter" | "hideAfter" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
     spanMethod: import("vue").PropType<((data: {
         row: any;
         rowIndex: number;
@@ -174,7 +174,7 @@ declare const _default: import("vue").DefineComponent<{
     scrollTo: (options: number | ScrollToOptions, yCoord?: number | undefined) => void;
     setScrollLeft: (left?: number | undefined) => void;
     setScrollTop: (top?: number | undefined) => void;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("select" | "select-all" | "expand-change" | "current-change" | "selection-change" | "cell-mouse-enter" | "cell-mouse-leave" | "cell-contextmenu" | "cell-click" | "cell-dblclick" | "row-click" | "row-contextmenu" | "row-dblclick" | "header-click" | "header-contextmenu" | "sort-change" | "filter-change" | "header-dragend")[], "select" | "select-all" | "expand-change" | "current-change" | "selection-change" | "cell-mouse-enter" | "cell-mouse-leave" | "cell-contextmenu" | "cell-click" | "cell-dblclick" | "row-click" | "row-contextmenu" | "row-dblclick" | "header-click" | "header-contextmenu" | "sort-change" | "filter-change" | "header-dragend", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("select-all" | "expand-change" | "current-change" | "select" | "selection-change" | "cell-mouse-enter" | "cell-mouse-leave" | "cell-contextmenu" | "cell-click" | "cell-dblclick" | "row-click" | "row-contextmenu" | "row-dblclick" | "header-click" | "header-contextmenu" | "sort-change" | "filter-change" | "header-dragend")[], "select" | "select-all" | "expand-change" | "current-change" | "selection-change" | "cell-mouse-enter" | "cell-mouse-leave" | "cell-contextmenu" | "cell-click" | "cell-dblclick" | "row-click" | "row-contextmenu" | "row-dblclick" | "header-click" | "header-contextmenu" | "sort-change" | "filter-change" | "header-dragend", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     data: {
         type: import("vue").PropType<any[]>;
         default: () => never[];
@@ -212,7 +212,7 @@ declare const _default: import("vue").DefineComponent<{
     defaultExpandAll: BooleanConstructor;
     defaultSort: import("vue").PropType<import("./table/defaults").Sort | undefined>;
     tooltipEffect: StringConstructor;
-    tooltipOptions: import("vue").PropType<Partial<Pick<import("../..").ElTooltipProps, "placement" | "showAfter" | "hideAfter" | "offset" | "effect" | "popperClass" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
+    tooltipOptions: import("vue").PropType<Partial<Pick<import("../..").ElTooltipProps, "placement" | "offset" | "effect" | "popperClass" | "showAfter" | "hideAfter" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
     spanMethod: import("vue").PropType<((data: {
         row: any;
         rowIndex: number;
@@ -281,10 +281,10 @@ declare const _default: import("vue").DefineComponent<{
 }, {
     lazy: boolean;
     style: import("vue").CSSProperties;
-    data: any[];
-    tableLayout: "auto" | "fixed";
-    border: boolean;
     className: string;
+    border: boolean;
+    tableLayout: "auto" | "fixed";
+    data: any[];
     fit: boolean;
     scrollbarAlwaysOn: boolean;
     stripe: boolean;

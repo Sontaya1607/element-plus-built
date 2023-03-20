@@ -78,12 +78,17 @@ const getDayDiffValue = (buddhistEra) => {
 const getBuddhistEraFormat = (format) => {
   return format.replace("YYYY", "BBBB");
 };
-const getBuddhistEraStringValue = (value, format) => {
-  const beYear = dayjs(value, format).year();
-  const ceYear = beYear - 543;
-  const dateStr = value.toString();
-  return dateStr.replace(beYear.toString(), ceYear.toString());
+const parseBuddhistEraToChristEra = (format) => {
+  return format.replace("BBBB", "YYYY");
+};
+const parseBuddhistEraUserInputToDayjs = (value, format) => {
+  if (format.includes("BBBB")) {
+    const beYear = value.toString().slice(Math.max(0, 7));
+    const ceYear = (Number.parseInt(beYear) - 543).toString();
+    return value.toString().replace(beYear, ceYear);
+  }
+  return value.toString();
 };
 
-export { buildPickerTable, getBuddhistEraFormat, getBuddhistEraStringValue, getDayDiffValue, getDefaultValue, isValidRange };
+export { buildPickerTable, getBuddhistEraFormat, getDayDiffValue, getDefaultValue, isValidRange, parseBuddhistEraToChristEra, parseBuddhistEraUserInputToDayjs };
 //# sourceMappingURL=utils.mjs.map

@@ -190,7 +190,7 @@ declare const _default: {
     defaultExpandAll: BooleanConstructor;
     defaultSort: PropType<Sort | undefined>;
     tooltipEffect: StringConstructor;
-    tooltipOptions: PropType<Partial<Pick<import("../../..").ElTooltipProps, "placement" | "showAfter" | "hideAfter" | "offset" | "effect" | "popperClass" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
+    tooltipOptions: PropType<Partial<Pick<import("../../..").ElTooltipProps, "placement" | "offset" | "effect" | "popperClass" | "showAfter" | "hideAfter" | "popperOptions" | "enterable" | "showArrow">> | undefined>;
     spanMethod: PropType<((data: {
         row: any;
         rowIndex: number;

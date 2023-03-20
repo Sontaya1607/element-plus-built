@@ -1,5 +1,5 @@
 import '../../../utils/index.mjs';
-import { tooltipV2RootProps } from './root2.mjs';
+import { tooltipV2RootProps } from './root.mjs';
 import { tooltipV2TriggerProps } from './trigger2.mjs';
 import { tooltipV2ArrowProps } from './arrow.mjs';
 import { tooltipV2ContentProps } from './content2.mjs';

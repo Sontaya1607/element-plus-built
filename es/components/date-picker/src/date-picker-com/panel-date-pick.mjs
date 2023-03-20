@@ -11,7 +11,7 @@ import '../../../../constants/index.mjs';
 import { DArrowLeft, ArrowLeft, ArrowRight, DArrowRight } from '@element-plus/icons-vue';
 import '../../../../tokens/index.mjs';
 import { panelDatePickProps } from '../props/panel-date-pick.mjs';
-import { getDayDiffValue, getBuddhistEraFormat, getBuddhistEraStringValue } from '../utils.mjs';
+import { getDayDiffValue, getBuddhistEraFormat, parseBuddhistEraUserInputToDayjs, parseBuddhistEraToChristEra } from '../utils.mjs';
 import DateTable from './basic-date-table.mjs';
 import MonthTable from './basic-month-table.mjs';
 import YearTable from './basic-year-table.mjs';
@@ -288,8 +288,9 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       return value.format(template);
     };
     const parseUserInput = (value) => {
-      const dateStringValue = props.buddhistEra ? getBuddhistEraStringValue(value, props.format) : value;
-      return dayjs(dateStringValue, props.format).locale(lang.value);
+      const dateStrVal = props.buddhistEra ? parseBuddhistEraUserInputToDayjs(value, props.format) : value;
+      const formatStr = props.buddhistEra ? parseBuddhistEraToChristEra(props.format) : props.format;
+      return dayjs(dateStrVal, formatStr).locale(lang.value);
     };
     const getDefaultValue = () => {
       const parseDate = dayjs(defaultValue.value).locale(lang.value);
