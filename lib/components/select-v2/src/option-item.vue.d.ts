@@ -28,7 +28,7 @@ declare const _default: import("vue").DefineComponent<{
     };
     hoverItem: () => void;
     selectOptionClick: () => void;
-}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("hover" | "select")[], "hover" | "select", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("select" | "hover")[], "select" | "hover", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     data: ArrayConstructor;
     disabled: BooleanConstructor;
     hovering: BooleanConstructor;

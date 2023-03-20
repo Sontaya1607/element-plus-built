@@ -153,7 +153,7 @@ export declare const ElForm: import("element-plus/es/utils").SFCWithInstall<impo
         };
         readonly error: StringConstructor;
         readonly validateStatus: {
-            readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "success" | "error" | "validating", unknown>>;
+            readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "error" | "success" | "validating", unknown>>;
             readonly required: false;
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
@@ -186,7 +186,7 @@ export declare const ElForm: import("element-plus/es/utils").SFCWithInstall<impo
             };
             readonly error: StringConstructor;
             readonly validateStatus: {
-                readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "success" | "error" | "validating", unknown>>;
+                readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "error" | "success" | "validating", unknown>>;
                 readonly required: false;
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
@@ -229,8 +229,8 @@ export declare const ElForm: import("element-plus/es/utils").SFCWithInstall<impo
         };
         labelId: string;
         inputIds: import("vue").Ref<string[]>;
-        validateState: import("vue").Ref<"" | "success" | "error" | "validating">;
-        validateStateDebounced: Readonly<import("vue").Ref<"" | "success" | "error" | "validating">>;
+        validateState: import("vue").Ref<"" | "error" | "success" | "validating">;
+        validateStateDebounced: Readonly<import("vue").Ref<"" | "error" | "success" | "validating">>;
         validateMessage: import("vue").Ref<string>;
         formItemRef: import("vue").Ref<HTMLDivElement | undefined>;
         initialValue: any;
@@ -256,7 +256,7 @@ export declare const ElForm: import("element-plus/es/utils").SFCWithInstall<impo
         isRequired: import("vue").ComputedRef<boolean>;
         shouldShowError: import("vue").ComputedRef<import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>>;
         currentLabel: import("vue").ComputedRef<string>;
-        setValidationState: (state: "" | "success" | "error" | "validating") => void;
+        setValidationState: (state: "" | "error" | "success" | "validating") => void;
         onValidationFailed: (error: import("../..").FormValidateFailure) => void;
         onValidationSucceeded: () => void;
         doValidate: (rules: import("async-validator").RuleItem[]) => Promise<true>;
@@ -294,7 +294,7 @@ export declare const ElForm: import("element-plus/es/utils").SFCWithInstall<impo
         };
         readonly error: StringConstructor;
         readonly validateStatus: {
-            readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "success" | "error" | "validating", unknown>>;
+            readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "error" | "success" | "validating", unknown>>;
             readonly required: false;
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
@@ -334,7 +334,7 @@ export declare const ElFormItem: import("element-plus/es/utils").SFCWithInstall<
     };
     readonly error: StringConstructor;
     readonly validateStatus: {
-        readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "success" | "error" | "validating", unknown>>;
+        readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "error" | "success" | "validating", unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;
@@ -367,7 +367,7 @@ export declare const ElFormItem: import("element-plus/es/utils").SFCWithInstall<
         };
         readonly error: StringConstructor;
         readonly validateStatus: {
-            readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "success" | "error" | "validating", unknown>>;
+            readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "error" | "success" | "validating", unknown>>;
             readonly required: false;
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
@@ -410,8 +410,8 @@ export declare const ElFormItem: import("element-plus/es/utils").SFCWithInstall<
     };
     labelId: string;
     inputIds: import("vue").Ref<string[]>;
-    validateState: import("vue").Ref<"" | "success" | "error" | "validating">;
-    validateStateDebounced: Readonly<import("vue").Ref<"" | "success" | "error" | "validating">>;
+    validateState: import("vue").Ref<"" | "error" | "success" | "validating">;
+    validateStateDebounced: Readonly<import("vue").Ref<"" | "error" | "success" | "validating">>;
     validateMessage: import("vue").Ref<string>;
     formItemRef: import("vue").Ref<HTMLDivElement | undefined>;
     initialValue: any;
@@ -437,7 +437,7 @@ export declare const ElFormItem: import("element-plus/es/utils").SFCWithInstall<
     isRequired: import("vue").ComputedRef<boolean>;
     shouldShowError: import("vue").ComputedRef<import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>>;
     currentLabel: import("vue").ComputedRef<string>;
-    setValidationState: (state: "" | "success" | "error" | "validating") => void;
+    setValidationState: (state: "" | "error" | "success" | "validating") => void;
     onValidationFailed: (error: import("../..").FormValidateFailure) => void;
     onValidationSucceeded: () => void;
     doValidate: (rules: import("async-validator").RuleItem[]) => Promise<true>;
@@ -475,7 +475,7 @@ export declare const ElFormItem: import("element-plus/es/utils").SFCWithInstall<
     };
     readonly error: StringConstructor;
     readonly validateStatus: {
-        readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "success" | "error" | "validating", unknown>>;
+        readonly type: import("vue").PropType<import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "error" | "success" | "validating", unknown>>;
         readonly required: false;
         readonly validator: ((val: unknown) => boolean) | undefined;
         __epPropKey: true;

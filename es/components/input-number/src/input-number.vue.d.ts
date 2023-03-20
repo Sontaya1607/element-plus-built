@@ -56,13 +56,13 @@ declare const _default: import("vue").DefineComponent<{
         };
         readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
     }>> & {
-        onChange?: ((cur: number | undefined, prev: number | undefined) => any) | undefined;
         "onUpdate:modelValue"?: ((val: number | undefined) => any) | undefined;
+        onChange?: ((cur: number | undefined, prev: number | undefined) => any) | undefined;
         onInput?: ((val: number | null | undefined) => any) | undefined;
-        onFocus?: ((e: FocusEvent) => any) | undefined;
         onBlur?: ((e: FocusEvent) => any) | undefined;
+        onFocus?: ((e: FocusEvent) => any) | undefined;
     }>>;
-    emit: ((event: "update:modelValue", val: number | undefined) => void) & ((event: "change", cur: number | undefined, prev: number | undefined) => void) & ((event: "input", val: number | null | undefined) => void) & ((event: "focus", e: FocusEvent) => void) & ((event: "blur", e: FocusEvent) => void);
+    emit: ((event: "update:modelValue", val: number | undefined) => void) & ((event: "change", cur: number | undefined, prev: number | undefined) => void) & ((event: "input", val: number | null | undefined) => void) & ((event: "blur", e: FocusEvent) => void) & ((event: "focus", e: FocusEvent) => void);
     t: import("element-plus/es/hooks").Translator;
     ns: {
         namespace: import("vue").Ref<string>;
@@ -166,18 +166,18 @@ declare const _default: import("vue").DefineComponent<{
             readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
             readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
         }>> & {
-            onChange?: ((value: string) => any) | undefined;
             "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-            onInput?: ((value: string) => any) | undefined;
-            onFocus?: ((evt: FocusEvent) => any) | undefined;
-            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onChange?: ((value: string) => any) | undefined;
             onClear?: (() => any) | undefined;
-            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onInput?: ((value: string) => any) | undefined;
+            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onFocus?: ((evt: FocusEvent) => any) | undefined;
+            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
         } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "type" | "disabled" | "label" | "modelValue" | "validateEvent" | "id" | "autosize" | "autocomplete" | "readonly" | "clearable" | "showPassword" | "showWordLimit" | "containerRole" | "tabindex" | "inputStyle">;
         $attrs: {
             [x: string]: unknown;
@@ -190,7 +190,7 @@ declare const _default: import("vue").DefineComponent<{
         }>;
         $root: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}>> | null;
         $parent: import("vue").ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, import("vue").ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}>> | null;
-        $emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "clear") => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void);
+        $emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "clear") => void);
         $el: any;
         $options: import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
             readonly id: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, undefined, boolean>;
@@ -257,18 +257,18 @@ declare const _default: import("vue").DefineComponent<{
             readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
             readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
         }>> & {
-            onChange?: ((value: string) => any) | undefined;
             "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-            onInput?: ((value: string) => any) | undefined;
-            onFocus?: ((evt: FocusEvent) => any) | undefined;
-            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onChange?: ((value: string) => any) | undefined;
             onClear?: (() => any) | undefined;
-            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onInput?: ((value: string) => any) | undefined;
+            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onFocus?: ((evt: FocusEvent) => any) | undefined;
+            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
         }, {
             props: Readonly<import("@vue/shared").LooseRequired<Readonly<import("vue").ExtractPropTypes<{
                 readonly id: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, undefined, boolean>;
@@ -335,20 +335,20 @@ declare const _default: import("vue").DefineComponent<{
                 readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
                 readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
             }>> & {
-                onChange?: ((value: string) => any) | undefined;
                 "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-                onInput?: ((value: string) => any) | undefined;
-                onFocus?: ((evt: FocusEvent) => any) | undefined;
-                onBlur?: ((evt: FocusEvent) => any) | undefined;
+                onChange?: ((value: string) => any) | undefined;
                 onClear?: (() => any) | undefined;
-                onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-                onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-                onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+                onInput?: ((value: string) => any) | undefined;
+                onBlur?: ((evt: FocusEvent) => any) | undefined;
+                onFocus?: ((evt: FocusEvent) => any) | undefined;
+                onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
                 onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
                 onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-                onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+                onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+                onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+                onMouseleave?: ((evt: MouseEvent) => any) | undefined;
             }>>;
-            emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "clear") => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void);
+            emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "clear") => void);
             rawAttrs: {
                 [x: string]: unknown;
             };
@@ -410,7 +410,7 @@ declare const _default: import("vue").DefineComponent<{
             textareaCalcStyle: import("vue").ShallowRef<import("vue").StyleValue>;
             _ref: import("vue").ComputedRef<HTMLInputElement | HTMLTextAreaElement | undefined>;
             needStatusIcon: import("vue").ComputedRef<boolean>;
-            validateState: import("vue").ComputedRef<"" | "success" | "error" | "validating">;
+            validateState: import("vue").ComputedRef<"" | "error" | "success" | "validating">;
             validateIcon: import("vue").ComputedRef<"" | import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>>;
             passwordIcon: import("vue").ComputedRef<import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>>;
             containerStyle: import("vue").ComputedRef<import("vue").StyleValue>;
@@ -620,18 +620,18 @@ declare const _default: import("vue").DefineComponent<{
         readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
         readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
     }>> & {
-        onChange?: ((value: string) => any) | undefined;
         "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-        onInput?: ((value: string) => any) | undefined;
-        onFocus?: ((evt: FocusEvent) => any) | undefined;
-        onBlur?: ((evt: FocusEvent) => any) | undefined;
+        onChange?: ((value: string) => any) | undefined;
         onClear?: (() => any) | undefined;
-        onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-        onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-        onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+        onInput?: ((value: string) => any) | undefined;
+        onBlur?: ((evt: FocusEvent) => any) | undefined;
+        onFocus?: ((evt: FocusEvent) => any) | undefined;
+        onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
         onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
         onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-        onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+        onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+        onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+        onMouseleave?: ((evt: MouseEvent) => any) | undefined;
     } & import("vue").ShallowUnwrapRef<{
         props: Readonly<import("@vue/shared").LooseRequired<Readonly<import("vue").ExtractPropTypes<{
             readonly id: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, undefined, boolean>;
@@ -698,20 +698,20 @@ declare const _default: import("vue").DefineComponent<{
             readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
             readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
         }>> & {
-            onChange?: ((value: string) => any) | undefined;
             "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-            onInput?: ((value: string) => any) | undefined;
-            onFocus?: ((evt: FocusEvent) => any) | undefined;
-            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onChange?: ((value: string) => any) | undefined;
             onClear?: (() => any) | undefined;
-            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onInput?: ((value: string) => any) | undefined;
+            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onFocus?: ((evt: FocusEvent) => any) | undefined;
+            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
         }>>;
-        emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "clear") => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void);
+        emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "clear") => void);
         rawAttrs: {
             [x: string]: unknown;
         };
@@ -773,7 +773,7 @@ declare const _default: import("vue").DefineComponent<{
         textareaCalcStyle: import("vue").ShallowRef<import("vue").StyleValue>;
         _ref: import("vue").ComputedRef<HTMLInputElement | HTMLTextAreaElement | undefined>;
         needStatusIcon: import("vue").ComputedRef<boolean>;
-        validateState: import("vue").ComputedRef<"" | "success" | "error" | "validating">;
+        validateState: import("vue").ComputedRef<"" | "error" | "success" | "validating">;
         validateIcon: import("vue").ComputedRef<"" | import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>>;
         passwordIcon: import("vue").ComputedRef<import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>>;
         containerStyle: import("vue").ComputedRef<import("vue").StyleValue>;
@@ -1025,20 +1025,20 @@ declare const _default: import("vue").DefineComponent<{
             readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
             readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
         }>> & {
-            onChange?: ((value: string) => any) | undefined;
             "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-            onInput?: ((value: string) => any) | undefined;
-            onFocus?: ((evt: FocusEvent) => any) | undefined;
-            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onChange?: ((value: string) => any) | undefined;
             onClear?: (() => any) | undefined;
-            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onInput?: ((value: string) => any) | undefined;
+            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onFocus?: ((evt: FocusEvent) => any) | undefined;
+            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
         }>>;
-        emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "clear") => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void);
+        emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "clear") => void);
         rawAttrs: {
             [x: string]: unknown;
         };
@@ -1100,7 +1100,7 @@ declare const _default: import("vue").DefineComponent<{
         textareaCalcStyle: import("vue").ShallowRef<import("vue").StyleValue>;
         _ref: import("vue").ComputedRef<HTMLInputElement | HTMLTextAreaElement | undefined>;
         needStatusIcon: import("vue").ComputedRef<boolean>;
-        validateState: import("vue").ComputedRef<"" | "success" | "error" | "validating">;
+        validateState: import("vue").ComputedRef<"" | "error" | "success" | "validating">;
         validateIcon: import("vue").ComputedRef<"" | import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>>;
         passwordIcon: import("vue").ComputedRef<import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>>;
         containerStyle: import("vue").ComputedRef<import("vue").StyleValue>;
@@ -1274,18 +1274,18 @@ declare const _default: import("vue").DefineComponent<{
         readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
         readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
     }>> & {
-        onChange?: ((value: string) => any) | undefined;
         "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-        onInput?: ((value: string) => any) | undefined;
-        onFocus?: ((evt: FocusEvent) => any) | undefined;
-        onBlur?: ((evt: FocusEvent) => any) | undefined;
+        onChange?: ((value: string) => any) | undefined;
         onClear?: (() => any) | undefined;
-        onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-        onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-        onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+        onInput?: ((value: string) => any) | undefined;
+        onBlur?: ((evt: FocusEvent) => any) | undefined;
+        onFocus?: ((evt: FocusEvent) => any) | undefined;
+        onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
         onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
         onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-        onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+        onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+        onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+        onMouseleave?: ((evt: MouseEvent) => any) | undefined;
     }, {
         readonly type: string;
         readonly disabled: boolean;
@@ -1406,11 +1406,11 @@ declare const _default: import("vue").DefineComponent<{
     };
     readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
 }>> & {
-    onChange?: ((cur: number | undefined, prev: number | undefined) => any) | undefined;
     "onUpdate:modelValue"?: ((val: number | undefined) => any) | undefined;
+    onChange?: ((cur: number | undefined, prev: number | undefined) => any) | undefined;
     onInput?: ((val: number | null | undefined) => any) | undefined;
-    onFocus?: ((e: FocusEvent) => any) | undefined;
     onBlur?: ((e: FocusEvent) => any) | undefined;
+    onFocus?: ((e: FocusEvent) => any) | undefined;
 }, {
     readonly disabled: boolean;
     readonly validateEvent: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;

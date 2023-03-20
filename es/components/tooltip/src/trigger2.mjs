@@ -9,7 +9,7 @@ import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';
 import { useNamespace } from '../../../hooks/use-namespace/index.mjs';
 import { TOOLTIP_INJECTION_KEY } from '../../../tokens/tooltip.mjs';
 import { composeEventHandlers } from '../../../utils/dom/event.mjs';
-import ElPopperTrigger from '../../popper/src/trigger2.mjs';
+import ElPopperTrigger from '../../popper/src/trigger.mjs';
 
 const __default__ = defineComponent({
   name: "ElTooltipTrigger"

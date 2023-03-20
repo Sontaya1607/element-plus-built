@@ -72,10 +72,10 @@ declare const Space: import("vue").DefineComponent<{
     };
 }>>, {
     readonly fill: boolean;
-    readonly style: StyleValue;
     readonly class: Arrayable<string | Record<string, boolean>>;
-    readonly wrap: boolean;
+    readonly style: StyleValue;
     readonly direction: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "vertical" | "horizontal", unknown>;
+    readonly wrap: boolean;
     readonly alignment: string;
     readonly spacer: VNodeChild;
     readonly fillRatio: number;

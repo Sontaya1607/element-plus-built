@@ -41,7 +41,7 @@ export declare const ElAffix: import("element-plus/es/utils").SFCWithInstall<imp
     };
     target: import("vue").ShallowRef<HTMLElement | undefined>;
     root: import("vue").ShallowRef<HTMLDivElement | undefined>;
-    scrollContainer: import("vue").ShallowRef<Window | HTMLElement | undefined>;
+    scrollContainer: import("vue").ShallowRef<HTMLElement | Window | undefined>;
     windowHeight: import("vue").Ref<number>;
     rootHeight: import("vue").Ref<number>;
     rootWidth: import("vue").Ref<number>;
@@ -85,9 +85,9 @@ export declare const ElAffix: import("element-plus/es/utils").SFCWithInstall<imp
     }) => any) | undefined;
 }, {
     readonly zIndex: import("element-plus/es/utils").EpPropMergeType<(new (...args: any[]) => import("csstype").ZIndexProperty & {}) | (() => import("csstype").ZIndexProperty) | ((new (...args: any[]) => import("csstype").ZIndexProperty & {}) | (() => import("csstype").ZIndexProperty))[], unknown, unknown>;
-    readonly target: string;
     readonly offset: number;
     readonly position: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "top" | "bottom", unknown>;
+    readonly target: string;
 }>> & Record<string, any>;
 export default ElAffix;
 export * from './src/affix';

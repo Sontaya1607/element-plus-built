@@ -7,8 +7,8 @@ import '../../../constants/index.mjs';
 import { buildProps, definePropType } from '../../../utils/vue/props/runtime.mjs';
 import { CommonProps } from '../../cascader-panel/src/config.mjs';
 import { useSizeProp } from '../../../hooks/use-common-props/index.mjs';
-import { useTooltipContentProps } from '../../tooltip/src/content.mjs';
-import { tagProps } from '../../tag/src/tag.mjs';
+import { useTooltipContentProps } from '../../tooltip/src/content2.mjs';
+import { tagProps } from '../../tag/src/tag2.mjs';
 import { UPDATE_MODEL_EVENT, CHANGE_EVENT } from '../../../constants/event.mjs';
 import { isBoolean } from '@vueuse/core';
 

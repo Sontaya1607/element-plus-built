@@ -154,7 +154,7 @@ declare const _default: import("vue").DefineComponent<{
         startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
         endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
         format: (template?: string | undefined) => string;
-        diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+        diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "y" | "D" | "M" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
         valueOf: () => number;
         unix: () => number;
         daysInMonth: () => number;
@@ -250,7 +250,7 @@ declare const _default: import("vue").DefineComponent<{
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
-        readonly nativeType: import("element-plus/es/utils").EpPropFinalized<StringConstructor, "button" | "submit" | "reset", unknown, "button", boolean>;
+        readonly nativeType: import("element-plus/es/utils").EpPropFinalized<StringConstructor, "reset" | "submit" | "button", unknown, "button", boolean>;
         readonly loading: BooleanConstructor;
         readonly loadingIcon: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) | ((new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>))[], unknown, unknown, () => import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>, boolean>;
         readonly plain: BooleanConstructor;
@@ -279,7 +279,7 @@ declare const _default: import("vue").DefineComponent<{
                 readonly validator: ((val: unknown) => boolean) | undefined;
                 __epPropKey: true;
             };
-            readonly nativeType: import("element-plus/es/utils").EpPropFinalized<StringConstructor, "button" | "submit" | "reset", unknown, "button", boolean>;
+            readonly nativeType: import("element-plus/es/utils").EpPropFinalized<StringConstructor, "reset" | "submit" | "button", unknown, "button", boolean>;
             readonly loading: BooleanConstructor;
             readonly loadingIcon: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) | ((new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>))[], unknown, unknown, () => import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>, boolean>;
             readonly plain: BooleanConstructor;
@@ -401,7 +401,7 @@ declare const _default: import("vue").DefineComponent<{
             readonly validator: ((val: unknown) => boolean) | undefined;
             __epPropKey: true;
         };
-        readonly nativeType: import("element-plus/es/utils").EpPropFinalized<StringConstructor, "button" | "submit" | "reset", unknown, "button", boolean>;
+        readonly nativeType: import("element-plus/es/utils").EpPropFinalized<StringConstructor, "reset" | "submit" | "button", unknown, "button", boolean>;
         readonly loading: BooleanConstructor;
         readonly loadingIcon: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) | ((new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>))[], unknown, unknown, () => import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>, boolean>;
         readonly plain: BooleanConstructor;
@@ -419,7 +419,7 @@ declare const _default: import("vue").DefineComponent<{
     }, {
         readonly type: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "" | "default" | "primary" | "success" | "warning" | "info" | "danger" | "text", unknown>;
         readonly text: boolean;
-        readonly nativeType: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "button" | "submit" | "reset", unknown>;
+        readonly nativeType: import("element-plus/es/utils").EpPropMergeType<StringConstructor, "reset" | "submit" | "button", unknown>;
         readonly loadingIcon: import("element-plus/es/utils").EpPropMergeType<(new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) | ((new (...args: any[]) => (string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>) & {}) | (() => string | import("vue").Component<any, any, any, import("vue").ComputedOptions, import("vue").MethodOptions>))[], unknown, unknown>;
         readonly autoInsertSpace: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
         readonly disabled: boolean;
@@ -613,20 +613,20 @@ declare const _default: import("vue").DefineComponent<{
             readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
             readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
         }>> & {
-            onChange?: ((value: string) => any) | undefined;
             "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-            onInput?: ((value: string) => any) | undefined;
-            onFocus?: ((evt: FocusEvent) => any) | undefined;
-            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onChange?: ((value: string) => any) | undefined;
             onClear?: (() => any) | undefined;
-            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onInput?: ((value: string) => any) | undefined;
+            onBlur?: ((evt: FocusEvent) => any) | undefined;
+            onFocus?: ((evt: FocusEvent) => any) | undefined;
+            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
             onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-            onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+            onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+            onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+            onMouseleave?: ((evt: MouseEvent) => any) | undefined;
         }>>;
-        emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "clear") => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void);
+        emit: ((event: "update:modelValue", value: string) => void) & ((event: "change", value: string) => void) & ((event: "input", value: string) => void) & ((event: "blur", evt: FocusEvent) => void) & ((event: "compositionend", evt: CompositionEvent) => void) & ((event: "compositionstart", evt: CompositionEvent) => void) & ((event: "compositionupdate", evt: CompositionEvent) => void) & ((event: "focus", evt: FocusEvent) => void) & ((event: "keydown", evt: Event | KeyboardEvent) => void) & ((event: "mouseenter", evt: MouseEvent) => void) & ((event: "mouseleave", evt: MouseEvent) => void) & ((event: "clear") => void);
         rawAttrs: {
             [x: string]: unknown;
         };
@@ -688,7 +688,7 @@ declare const _default: import("vue").DefineComponent<{
         textareaCalcStyle: import("vue").ShallowRef<import("vue").StyleValue>;
         _ref: import("vue").ComputedRef<HTMLInputElement | HTMLTextAreaElement | undefined>;
         needStatusIcon: import("vue").ComputedRef<boolean>;
-        validateState: import("vue").ComputedRef<"" | "success" | "error" | "validating">;
+        validateState: import("vue").ComputedRef<"" | "error" | "success" | "validating">;
         validateIcon: import("vue").ComputedRef<"" | import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>>;
         passwordIcon: import("vue").ComputedRef<import("vue").DefineComponent<{}, {}, {}, import("vue").ComputedOptions, import("vue").MethodOptions, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{}>>, {}>>;
         containerStyle: import("vue").ComputedRef<import("vue").StyleValue>;
@@ -862,18 +862,18 @@ declare const _default: import("vue").DefineComponent<{
         readonly validateEvent: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
         readonly inputStyle: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue) | ((new (...args: any[]) => import("vue").StyleValue & {}) | (() => import("vue").StyleValue))[], unknown, unknown, () => import("element-plus/es/utils").Mutable<{}>, boolean>;
     }>> & {
-        onChange?: ((value: string) => any) | undefined;
         "onUpdate:modelValue"?: ((value: string) => any) | undefined;
-        onInput?: ((value: string) => any) | undefined;
-        onFocus?: ((evt: FocusEvent) => any) | undefined;
-        onBlur?: ((evt: FocusEvent) => any) | undefined;
+        onChange?: ((value: string) => any) | undefined;
         onClear?: (() => any) | undefined;
-        onMouseleave?: ((evt: MouseEvent) => any) | undefined;
-        onMouseenter?: ((evt: MouseEvent) => any) | undefined;
-        onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+        onInput?: ((value: string) => any) | undefined;
+        onBlur?: ((evt: FocusEvent) => any) | undefined;
+        onFocus?: ((evt: FocusEvent) => any) | undefined;
+        onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
         onCompositionstart?: ((evt: CompositionEvent) => any) | undefined;
         onCompositionupdate?: ((evt: CompositionEvent) => any) | undefined;
-        onCompositionend?: ((evt: CompositionEvent) => any) | undefined;
+        onKeydown?: ((evt: Event | KeyboardEvent) => any) | undefined;
+        onMouseenter?: ((evt: MouseEvent) => any) | undefined;
+        onMouseleave?: ((evt: MouseEvent) => any) | undefined;
     }, {
         readonly type: string;
         readonly disabled: boolean;
@@ -992,7 +992,7 @@ declare const _default: import("vue").DefineComponent<{
             startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
             endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
             format: (template?: string | undefined) => string;
-            diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+            diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "y" | "D" | "M" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
             valueOf: () => number;
             unix: () => number;
             daysInMonth: () => number;
@@ -1062,7 +1062,7 @@ declare const _default: import("vue").DefineComponent<{
             startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
             endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
             format: (template?: string | undefined) => string;
-            diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+            diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "y" | "D" | "M" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
             valueOf: () => number;
             unix: () => number;
             daysInMonth: () => number;
@@ -1093,7 +1093,7 @@ declare const _default: import("vue").DefineComponent<{
         }[] | undefined>;
         transitionName: import("vue").ComputedRef<string>;
         showSeconds: import("vue").ComputedRef<boolean>;
-        amPmMode: import("vue").ComputedRef<"" | "A" | "a">;
+        amPmMode: import("vue").ComputedRef<"" | "a" | "A">;
         isValidValue: (_date: dayjs.Dayjs) => boolean;
         handleCancel: () => void;
         handleConfirm: (visible?: boolean, first?: boolean) => void;
@@ -1141,7 +1141,7 @@ declare const _default: import("vue").DefineComponent<{
             };
             readonly showSeconds: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
             readonly arrowControl: BooleanConstructor;
-            readonly amPmMode: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => ("" | "A" | "a") & {}) | (() => "" | "A" | "a") | ((new (...args: any[]) => ("" | "A" | "a") & {}) | (() => "" | "A" | "a"))[], unknown, unknown, "", boolean>;
+            readonly amPmMode: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => ("" | "a" | "A") & {}) | (() => "" | "a" | "A") | ((new (...args: any[]) => ("" | "a" | "A") & {}) | (() => "" | "a" | "A"))[], unknown, unknown, "", boolean>;
         }, {
             props: Readonly<import("@vue/shared").LooseRequired<Readonly<import("vue").ExtractPropTypes<{
                 readonly disabledHours: {
@@ -1176,7 +1176,7 @@ declare const _default: import("vue").DefineComponent<{
                 };
                 readonly showSeconds: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
                 readonly arrowControl: BooleanConstructor;
-                readonly amPmMode: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => ("" | "A" | "a") & {}) | (() => "" | "A" | "a") | ((new (...args: any[]) => ("" | "A" | "a") & {}) | (() => "" | "A" | "a"))[], unknown, unknown, "", boolean>;
+                readonly amPmMode: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => ("" | "a" | "A") & {}) | (() => "" | "a" | "A") | ((new (...args: any[]) => ("" | "a" | "A") & {}) | (() => "" | "a" | "A"))[], unknown, unknown, "", boolean>;
             }>> & {
                 onChange?: ((...args: any[]) => any) | undefined;
                 "onSelect-range"?: ((...args: any[]) => any) | undefined;
@@ -1212,8 +1212,8 @@ declare const _default: import("vue").DefineComponent<{
                 $props: Partial<{
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -1238,7 +1238,7 @@ declare const _default: import("vue").DefineComponent<{
                         scrollTop: number;
                         scrollLeft: number;
                     }) => any) | undefined;
-                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "always" | "maxHeight" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
+                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "maxHeight" | "always" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
                 $attrs: {
                     [x: string]: unknown;
                 };
@@ -1761,8 +1761,8 @@ declare const _default: import("vue").DefineComponent<{
                 }, string, {
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -2295,8 +2295,8 @@ declare const _default: import("vue").DefineComponent<{
                 $props: Partial<{
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -2321,7 +2321,7 @@ declare const _default: import("vue").DefineComponent<{
                         scrollTop: number;
                         scrollLeft: number;
                     }) => any) | undefined;
-                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "always" | "maxHeight" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
+                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "maxHeight" | "always" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
                 $attrs: {
                     [x: string]: unknown;
                 };
@@ -2844,8 +2844,8 @@ declare const _default: import("vue").DefineComponent<{
                 }, string, {
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -3378,8 +3378,8 @@ declare const _default: import("vue").DefineComponent<{
                 $props: Partial<{
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -3404,7 +3404,7 @@ declare const _default: import("vue").DefineComponent<{
                         scrollTop: number;
                         scrollLeft: number;
                     }) => any) | undefined;
-                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "always" | "maxHeight" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
+                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "maxHeight" | "always" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
                 $attrs: {
                     [x: string]: unknown;
                 };
@@ -3927,8 +3927,8 @@ declare const _default: import("vue").DefineComponent<{
                 }, string, {
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -4461,8 +4461,8 @@ declare const _default: import("vue").DefineComponent<{
                 $props: Partial<{
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -4487,7 +4487,7 @@ declare const _default: import("vue").DefineComponent<{
                         scrollTop: number;
                         scrollLeft: number;
                     }) => any) | undefined;
-                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "always" | "maxHeight" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
+                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "maxHeight" | "always" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
                 $attrs: {
                     [x: string]: unknown;
                 };
@@ -5010,8 +5010,8 @@ declare const _default: import("vue").DefineComponent<{
                 }, string, {
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -5572,8 +5572,8 @@ declare const _default: import("vue").DefineComponent<{
                 $props: Partial<{
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -5598,7 +5598,7 @@ declare const _default: import("vue").DefineComponent<{
                         scrollTop: number;
                         scrollLeft: number;
                     }) => any) | undefined;
-                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "always" | "maxHeight" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
+                } & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, "tag" | "height" | "maxHeight" | "always" | "native" | "wrapStyle" | "wrapClass" | "viewClass" | "viewStyle" | "minSize" | "noresize">;
                 $attrs: {
                     [x: string]: unknown;
                 };
@@ -6121,8 +6121,8 @@ declare const _default: import("vue").DefineComponent<{
                 }, string, {
                     readonly tag: string;
                     readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                    readonly always: boolean;
                     readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                    readonly always: boolean;
                     readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                     readonly wrapStyle: import("vue").StyleValue;
                     readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -7168,8 +7168,8 @@ declare const _default: import("vue").DefineComponent<{
             }, {
                 readonly tag: string;
                 readonly height: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
-                readonly always: boolean;
                 readonly maxHeight: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, NumberConstructor], unknown, unknown>;
+                readonly always: boolean;
                 readonly native: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
                 readonly wrapStyle: import("vue").StyleValue;
                 readonly wrapClass: import("element-plus/es/utils").EpPropMergeType<readonly [StringConstructor, ArrayConstructor], unknown, unknown>;
@@ -7276,7 +7276,7 @@ declare const _default: import("vue").DefineComponent<{
             };
             readonly showSeconds: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
             readonly arrowControl: BooleanConstructor;
-            readonly amPmMode: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => ("" | "A" | "a") & {}) | (() => "" | "A" | "a") | ((new (...args: any[]) => ("" | "A" | "a") & {}) | (() => "" | "A" | "a"))[], unknown, unknown, "", boolean>;
+            readonly amPmMode: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => ("" | "a" | "A") & {}) | (() => "" | "a" | "A") | ((new (...args: any[]) => ("" | "a" | "A") & {}) | (() => "" | "a" | "A"))[], unknown, unknown, "", boolean>;
         }>> & {
             onChange?: ((...args: any[]) => any) | undefined;
             "onSelect-range"?: ((...args: any[]) => any) | undefined;
@@ -7284,7 +7284,7 @@ declare const _default: import("vue").DefineComponent<{
         }, {
             readonly arrowControl: boolean;
             readonly showSeconds: import("element-plus/es/utils").EpPropMergeType<BooleanConstructor, unknown, unknown>;
-            readonly amPmMode: import("element-plus/es/utils").EpPropMergeType<(new (...args: any[]) => ("" | "A" | "a") & {}) | (() => "" | "A" | "a") | ((new (...args: any[]) => ("" | "A" | "a") & {}) | (() => "" | "A" | "a"))[], unknown, unknown>;
+            readonly amPmMode: import("element-plus/es/utils").EpPropMergeType<(new (...args: any[]) => ("" | "a" | "A") & {}) | (() => "" | "a" | "A") | ((new (...args: any[]) => ("" | "a" | "A") & {}) | (() => "" | "a" | "A"))[], unknown, unknown>;
         }>;
     }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("pick" | "select-range" | "set-picker-option")[], "pick" | "select-range" | "set-picker-option", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
         readonly datetimeRole: StringConstructor;
@@ -7539,7 +7539,7 @@ declare const _default: import("vue").DefineComponent<{
                 startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
                 endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
                 format: (template?: string | undefined) => string;
-                diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+                diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "y" | "D" | "M" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
                 valueOf: () => number;
                 unix: () => number;
                 daysInMonth: () => number;
@@ -7675,7 +7675,7 @@ declare const _default: import("vue").DefineComponent<{
                 startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
                 endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
                 format: (template?: string | undefined) => string;
-                diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+                diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "y" | "D" | "M" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
                 valueOf: () => number;
                 unix: () => number;
                 daysInMonth: () => number;
@@ -7704,7 +7704,7 @@ declare const _default: import("vue").DefineComponent<{
                 isSameOrAfter: (date: string | number | Date | dayjs.Dayjs | null | undefined, unit?: dayjs.OpUnitType | undefined) => boolean;
                 isSameOrBefore: (date: string | number | Date | dayjs.Dayjs | null | undefined, unit?: dayjs.OpUnitType | undefined) => boolean;
             } | undefined;
-            type?: ("week" | "normal" | "prev-month" | "next-month" | "today") | undefined;
+            type?: ("week" | "today" | "normal" | "prev-month" | "next-month") | undefined;
         }[][]>;
         focusWithClick: boolean;
         firstDayOfWeek: any;
@@ -7778,7 +7778,7 @@ declare const _default: import("vue").DefineComponent<{
                 startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
                 endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
                 format: (template?: string | undefined) => string;
-                diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+                diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "y" | "D" | "M" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
                 valueOf: () => number;
                 unix: () => number;
                 daysInMonth: () => number;
@@ -7914,7 +7914,7 @@ declare const _default: import("vue").DefineComponent<{
                 startOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
                 endOf: (unit: dayjs.OpUnitType) => dayjs.Dayjs;
                 format: (template?: string | undefined) => string;
-                diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "D" | "M" | "y" | "weeks" | "months" | "m" | "s" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
+                diff: (date?: string | number | Date | dayjs.Dayjs | null | undefined, unit?: "year" | "month" | "date" | "dates" | "week" | "y" | "D" | "M" | "weeks" | "months" | "s" | "m" | "day" | "hour" | "minute" | "second" | "millisecond" | "hours" | "minutes" | "seconds" | "milliseconds" | "days" | "years" | "d" | "h" | "ms" | "w" | "quarter" | "quarters" | "Q" | undefined, float?: boolean | undefined) => number;
                 valueOf: () => number;
                 unix: () => number;
                 daysInMonth: () => number;
@@ -7943,7 +7943,7 @@ declare const _default: import("vue").DefineComponent<{
                 isSameOrAfter: (date: string | number | Date | dayjs.Dayjs | null | undefined, unit?: dayjs.OpUnitType | undefined) => boolean;
                 isSameOrBefore: (date: string | number | Date | dayjs.Dayjs | null | undefined, unit?: dayjs.OpUnitType | undefined) => boolean;
             } | undefined;
-            type?: ("week" | "normal" | "prev-month" | "next-month" | "today") | undefined;
+            type?: ("week" | "today" | "normal" | "prev-month" | "next-month") | undefined;
         }[][]>;
         focus: () => Promise<void>;
         isNormalDay: (type?: string) => boolean;
@@ -8137,7 +8137,7 @@ declare const _default: import("vue").DefineComponent<{
             start: boolean;
             end: boolean;
             text: number;
-            type: "normal" | "today";
+            type: "today" | "normal";
             inRange: boolean;
         }[][]>;
         lastRow: import("vue").Ref<number | undefined>;
@@ -8149,7 +8149,7 @@ declare const _default: import("vue").DefineComponent<{
             start: boolean;
             end: boolean;
             text: number;
-            type: "normal" | "today";
+            type: "today" | "normal";
             inRange: boolean;
         }[][]>;
         focus: () => void;
@@ -8160,7 +8160,7 @@ declare const _default: import("vue").DefineComponent<{
             start: boolean;
             end: boolean;
             text: number;
-            type: "normal" | "today";
+            type: "today" | "normal";
             inRange: boolean;
         }) => any;
         isSelectedCell: (cell: {
@@ -8170,7 +8170,7 @@ declare const _default: import("vue").DefineComponent<{
             start: boolean;
             end: boolean;
             text: number;
-            type: "normal" | "today";
+            type: "today" | "normal";
             inRange: boolean;
         }) => boolean;
         handleMouseMove: (event: MouseEvent) => void;

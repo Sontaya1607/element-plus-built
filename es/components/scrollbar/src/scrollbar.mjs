@@ -4,7 +4,7 @@ import '../../../utils/index.mjs';
 import '../../../tokens/index.mjs';
 import '../../../hooks/index.mjs';
 import { GAP } from './util.mjs';
-import Bar from './bar2.mjs';
+import Bar from './bar.mjs';
 import { scrollbarProps, scrollbarEmits } from './scrollbar2.mjs';
 import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';
 import { useNamespace } from '../../../hooks/use-namespace/index.mjs';

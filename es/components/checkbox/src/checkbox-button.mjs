@@ -2,7 +2,7 @@ import { defineComponent, useSlots, inject, computed, openBlock, createElementBl
 import '../../../hooks/index.mjs';
 import '../../../tokens/index.mjs';
 import './composables/index.mjs';
-import { checkboxProps, checkboxEmits } from './checkbox2.mjs';
+import { checkboxProps, checkboxEmits } from './checkbox.mjs';
 import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';
 import { useCheckbox } from './composables/use-checkbox.mjs';
 import { checkboxGroupContextKey } from '../../../tokens/checkbox.mjs';

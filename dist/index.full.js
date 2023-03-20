@@ -23918,7 +23918,7 @@
   };
   const parseBuddhistEraUserInputToDayjs = (value, format) => {
     if (format.includes("BBBB")) {
-      const beYear = value.toString().slice(Math.max(0, 7));
+      const beYear = value.toString().slice(Math.max(0, 6));
       const ceYear = (Number.parseInt(beYear) - 543).toString();
       return value.toString().replace(beYear, ceYear);
     }

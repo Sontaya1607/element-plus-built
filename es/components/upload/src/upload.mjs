@@ -2,7 +2,7 @@ import { defineComponent, useSlots, shallowRef, computed, onBeforeUnmount, provi
 import '../../../tokens/index.mjs';
 import '../../../hooks/index.mjs';
 import UploadList from './upload-list2.mjs';
-import UploadContent from './upload-content.mjs';
+import UploadContent from './upload-content2.mjs';
 import { useHandlers } from './use-handlers.mjs';
 import { uploadProps } from './upload2.mjs';
 import _export_sfc from '../../../_virtual/plugin-vue_export-helper.mjs';
